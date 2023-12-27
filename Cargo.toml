@@ -1,0 +1,20 @@
+[package]
+edition = "2018"
+exclude = ["index.node"]
+license = "ISC"
+name = "js-binding"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+sha2 = "0.10.8"
+
+[dependencies.neon]
+default-features = false
+features = ["napi-6"]
+version = "0.10"
